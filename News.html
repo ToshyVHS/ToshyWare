@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Toshy Ware's | News</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toshy Ware's | Content For XToshy">
+    <meta name="keywords" content="Bypass, Linkvertise, Pastebin, Ads">
+    <meta name="author" content="Toshy">
+    <link rel="stylesheet" href="News.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop>
+        <source src="https://i.imgur.com/qCHSZDU.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>ToshyWare's</h1>
+        <p>Download All Executor By Mediafire <p>
+            <p> </p>
+        </p>
+        
+    </div>
+
+    <!-- Main Content -->
+<div class="main-content">
+        <div class="container">
+            <div class="executor" id="fluxus">
+                <img src="https://images.provenexpert.com/6c/55/2cb3d9c01caa9709b98263ede4c4/fluxus-roblox-android-executor_medium_1675254974.jpg" alt="Fluxus">
+                <h2>Fluxus</h2>
+                <p>Updated Fluxus Executor!</p>
+                <button class="btn" onclick="expand('fluxus', 'Fluxus.html')">Download</button>
+            </div>
+
+
+            <div class="executor" id="delta">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IgLhREFAdVqfhtfLaDzc3hX-pyRbisMDexCSRT6yLMvrdiDkPxNfvogx&s=10" alt="Delta">
+                <h2>Delta</h2>
+                <p>Updated Delta Executor!</p>
+                <button class="btn" onclick="expand('delta', 'https://www.mediafire.com/file/zneu1o8x2ctzxut/Delta+V2.638.apk/file')">Download</button>
+            </div>
+
+      <div class="executor" id="vegax">
+                <img src="https://www.softlay.com/downloads/wp-content/uploads/Vega-X-Executor-Logo.png" alt="Vega X">
+                <h2>Vega X</h2>
+                <p>Updated Vega X Executor!</p>
+                <button class="btn" onclick="expand('vegax', 'https://www.mediafire.com/file/ufi5wotqy1ovr98/Vega_X_V2.637.apk/file')">Download</button>
+            </div>
+       
+            <div class="executor" id="arceus">
+                <img src="https://yt3.googleusercontent.com/1hrfG369NBzgC0mph5o-QcQGpKTYx-1PXY5qADE_UHwvpzVn3IbYiSE_afSYg8dCygcVKOmf=s900-c-k-c0x00ffffff-no-rj" alt="Arceus">
+                <h2>Arceus X</h2>
+                <p>Updated Arceus X Executor!</p>
+                <button class="btn" onclick="expand('arceus', 'https://www.mediafire.com/file/lxcaucdnn0gxva6/Arceus_X_NEO_V1.4.0.apk/file')">Download</button>
+            </div>
+
+            <div class="executor" id="codex">
+                <img src="https://play-lh.googleusercontent.com/6kNoyUFDekYr1Z9Yq-Q984J3eEFSqdxbATM6O9L5rBjZANOkXUF6p7z-QBRz1thh0Q0" alt="Codex">
+                <h2>Codex</h2>
+                <p>Updated Codex Executor!</p>
+                <button class="btn" onclick="expand('codex', 'https://www.mediafire.com/file/1n48xn292h4an0o/Codex+V2.638.apk/file')">Download</button>
+            </div>
+
+            <div class="executor" id="hydrogen">
+                <img src="https://i1.sndcdn.com/artworks-7yFoKxV1uIkfFTfC-8FX6vQ-t500x500.jpg" alt="Hydrogen">
+                <h2>Hydrogen</h2>
+                <p>Updated Hydrogen Executor!</p>
+                <button class="btn" onclick="expand('hydrogen', 'https://getcryptic.net')">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Discord Button Section -->
+    <a href="https://discord.com" class="discord-button">
+        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6892625-discord-logo-icon-editorial-vector-gratis-vetor.jpg" alt="Discord Logo">
+        Discord
+    </a>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p><strong>Créditos:</strong> Website Developed By <a href="#">ToshyVHS<href="#"<p>
+        <p>&copy; Copyright - 2024</p>
+    </footer>
+
+    <script>
+        function expand(id, url) {
+            var element = document.getElementById(id);
+
+            // Remove classes if already present to allow for repeated clicks
+            element.classList.remove('expand');
+            element.classList.remove('shrink');
+
+            // Trigger reflow to apply the class again
+            void element.offsetWidth;
+
+            // Add the expand class to trigger the animation
+            element.classList.add('expand');
+
+            // Wait 0.3 segundos antes de redirecionar e encolher o elemento
+            setTimeout(function() {
+                element.classList.remove('expand');
+                element.classList.add('shrink');
+
+                setTimeout(function() {
+                    window.location.href = url;  // Redirecionar após encolher
+                }, 300);  // Esperar a animação de encolhimento concluir (0.3s)
+            }, 300);  // Esperar 0.3 segundos antes de iniciar a animação de encolhimento
+        }
+    </script>
+</body>
+</html>
